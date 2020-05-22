@@ -65,7 +65,7 @@
                 ctx.fillStyle = '#0000ff';   
             }
             else if(state == 'x'){
-                ctx.fillStyle = '#000000';   
+                ctx.fillStyle = '#000000';
             }
             else{
                 ctx.fillStyle = '#ffff00';   
@@ -75,6 +75,7 @@
             ctx.rect(x,y,w,h);
             ctx.closePath();
             ctx.fill();
+            setTimeout(rect, 1000); // check again in a second  
         }
 
         // This function mean clear the camvas from 0,0 to End tile
